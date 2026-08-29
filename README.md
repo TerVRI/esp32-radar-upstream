@@ -161,6 +161,28 @@ displayed correctly; only `offset_x 0` was visibly wrong.
 Keep an eye on the `heap` figure in the serial status line. It sits around
 60–65 KB in normal use; if it falls toward 15 KB, NimBLE will abort.
 
+## Credits and third-party licences
+
+The firmware in this repository is original work, but it does nothing without
+the following, and all credit for the heavy lifting belongs to their authors:
+
+| Project | Author | Licence |
+|---|---|---|
+| [LovyanGFX](https://github.com/lovyan03/LovyanGFX) | lovyan03 | FreeBSD (2-clause BSD) |
+| [NimBLE-Arduino](https://github.com/h2zero/NimBLE-Arduino) | h2zero | Apache-2.0 |
+| [arduino-esp32](https://github.com/espressif/arduino-esp32) | Espressif Systems | LGPL-2.1 |
+
+LovyanGFX's licence file additionally carries the notices of the work it
+descends from — Adafruit Industries (Adafruit_ILI9341, BSD/MIT) and Bodmer
+(TFT_eSPI, FreeBSD) — and those notices travel with the library.
+
+The ST7789 panel configuration in this repository was derived by testing on
+hardware, but the vendor pin definitions were published by **ideaspark** in
+their board documentation.
+
+None of the above authors are affiliated with this project or endorse it.
+
 ## Licence
 
-MIT — see [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE). This covers the original code here only; the
+dependencies above remain under their own licences.
